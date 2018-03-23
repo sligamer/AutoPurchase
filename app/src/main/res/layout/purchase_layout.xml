@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:background="@drawable/logo"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="215dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:labelFor="@+id/editText1"
+        android:text="@string/car_price"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:text="@string/car_price" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="232dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:labelFor="@+id/editText2"
+        android:text="@string/down_payment"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup1"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/down_payment" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/dollar_sign"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="@string/dollar_sign" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/dollar_sign"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/editText1"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:text="@string/dollar_sign" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="412dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/steel_blue"
+        android:text="@string/instruction"
+        android:textAlignment="center"
+        android:textColor="@color/bone_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:text="@string/instruction" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:labelFor="@+id/textView1"
+        android:text="@string/editText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="text"
+        android:labelFor="@+id/textView2"
+        android:text="@string/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="150dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/steel_blue"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingEnd="1sp"
+        android:paddingStart="25dp"
+        android:textAlignment="inherit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/years2"
+            android:textAlignment="textStart"
+            android:textColor="#fff"
+            tools:text="@string/years2" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/years3"
+            android:textAlignment="textStart"
+            android:textColor="#fff"
+            tools:text="@string/years3" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/years4"
+            android:textAlignment="textStart"
+            android:textColor="#fff"
+            tools:text="@string/years4" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/loan_term"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
+        tools:text="@string/loan_term" />
+
+    <Button
+        android:id="@+id/LoanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/generate_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
